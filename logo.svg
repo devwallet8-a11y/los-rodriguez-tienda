@@ -1,0 +1,94 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style>
+      .store-text { font-family: cursive; font-weight: bold; }
+      .tienda-text { font-family: Arial, sans-serif; font-weight: bold; }
+    </style>
+  </defs>
+  
+  <!-- Outer circle border -->
+  <circle cx="200" cy="200" r="190" fill="#f5e6d3" stroke="#b90012" stroke-width="8"/>
+  <circle cx="200" cy="200" r="182" fill="none" stroke="#00325f" stroke-width="3"/>
+  
+  <!-- Background -->
+  <rect x="50" y="50" width="300" height="300" fill="#e8d4b8" rx="20"/>
+  
+  <!-- Sky -->
+  <path d="M 50 120 Q 100 60 200 50 Q 300 60 350 120 L 350 180 Q 200 140 50 180 Z" fill="#87ceeb"/>
+  
+  <!-- Water -->
+  <path d="M 50 180 Q 100 200 200 190 Q 300 200 350 180 L 350 280 Q 200 260 50 280 Z" fill="#4a90a4"/>
+  
+  <!-- Palm tree on left -->
+  <g transform="translate(80, 140)">
+    <!-- Trunk -->
+    <rect x="-4" y="40" width="8" height="80" fill="#654321"/>
+    <!-- Fronds -->
+    <ellipse cx="-30" cy="20" rx="15" ry="30" fill="#003d5c" transform="rotate(-30 -30 20)"/>
+    <ellipse cx="-15" cy="0" rx="15" ry="30" fill="#003d5c" transform="rotate(-10 -15 0)"/>
+    <ellipse cx="15" cy="0" rx="15" ry="30" fill="#003d5c" transform="rotate(10 15 0)"/>
+    <ellipse cx="30" cy="20" rx="15" ry="30" fill="#003d5c" transform="rotate(30 30 20)"/>
+    <ellipse cx="35" cy="45" rx="15" ry="30" fill="#003d5c" transform="rotate(50 35 45)"/>
+  </g>
+  
+  <!-- Building in background -->
+  <rect x="200" y="110" width="100" height="90" fill="#c9b89e" stroke="#00325f" stroke-width="2"/>
+  <circle cx="225" cy="140" r="6" fill="#87ceeb"/>
+  <circle cx="250" cy="140" r="6" fill="#87ceeb"/>
+  <circle cx="275" cy="140" r="6" fill="#87ceeb"/>
+  <circle cx="225" cy="165" r="6" fill="#87ceeb"/>
+  <circle cx="250" cy="165" r="6" fill="#87ceeb"/>
+  <circle cx="275" cy="165" r="6" fill="#87ceeb"/>
+  
+  <!-- Store front -->
+  <rect x="120" y="160" width="100" height="90" fill="#d4c9b0" stroke="#00325f" stroke-width="2"/>
+  
+  <!-- Store awning -->
+  <path d="M 135 160 L 145 150 L 205 150 L 215 160 Z" fill="#b90012" stroke="#00325f" stroke-width="1"/>
+  <path d="M 140 158 L 145 152 M 155 158 L 160 152 M 170 158 L 175 152 M 185 158 L 190 152 M 200 158 L 205 152" stroke="#ffffff" stroke-width="1"/>
+  
+  <!-- Store window -->
+  <rect x="135" y="165" width="90" height="50" fill="#1a1a1a" stroke="#00325f" stroke-width="1"/>
+  
+  <!-- Bottles in window -->
+  <rect x="145" y="172" width="8" height="25" fill="#8b4513"/>
+  <rect x="157" y="175" width="8" height="22" fill="#8b4513"/>
+  <rect x="169" y="170" width="8" height="27" fill="#8b4513"/>
+  <rect x="181" y="173" width="8" height="24" fill="#8b4513"/>
+  <rect x="193" y="176" width="8" height="21" fill="#8b4513"/>
+  
+  <!-- Store sign "TIENDA" -->
+  <text x="170" y="220" text-anchor="middle" class="tienda-text" font-size="18" fill="#b90012">TIENDA</text>
+  
+  <!-- Star accent -->
+  <polygon points="180,210 182,216 188,216 183,220 185,226 180,222 175,226 177,220 172,216 178,216" fill="#b90012"/>
+  
+  <!-- Tagline -->
+  <text x="170" y="240" text-anchor="middle" class="tienda-text" font-size="12" fill="#00325f">DE TODO, COMO EN CASA</text>
+  
+  <!-- Classic car on right -->
+  <g transform="translate(280, 210)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="35" ry="15" fill="#003d5c"/>
+    <!-- Cabin -->
+    <rect x="-20" y="-12" width="30" height="12" fill="#003d5c" rx="2"/>
+    <!-- Wheels -->
+    <circle cx="-20" cy="15" r="6" fill="#333"/>
+    <circle cx="20" cy="15" r="6" fill="#333"/>
+    <!-- Windows -->
+    <rect x="-18" y="-8" width="12" height="6" fill="#87ceeb"/>
+    <rect x="2" y="-8" width="12" height="6" fill="#87ceeb"/>
+  </g>
+  
+  <!-- Main text "Los Rodríguez" -->
+  <text x="200" y="310" text-anchor="middle" class="store-text" font-size="48" fill="#b90012" font-style="italic">Los Rodríguez</text>
+  
+  <!-- Bottom text -->
+  <text x="200" y="350" text-anchor="middle" class="tienda-text" font-size="14" fill="#00325f">★ TIENDA ★</text>
+  <text x="200" y="368" text-anchor="middle" class="tienda-text" font-size="12" fill="#00325f">DE TODO, COMO EN CASA</text>
+  
+  <!-- Decorative stars -->
+  <polygon points="70,80 72,86 78,86 73,90 75,96 70,92 65,96 67,90 62,86 68,86" fill="#b90012"/>
+  <polygon points="330,100 332,106 338,106 333,110 335,116 330,112 325,116 327,110 322,106 328,106" fill="#b90012"/>
+  <polygon points="330,320 332,326 338,326 333,330 335,336 330,332 325,336 327,330 322,326 328,326" fill="#b90012"/>
+</svg>
