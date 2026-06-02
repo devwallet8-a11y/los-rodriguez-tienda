@@ -16,7 +16,7 @@ body{font-family:Arial,sans-serif;background:#fff4df;color:#071f3d}
 .header{display:flex;align-items:center;justify-content:space-between;padding:15px 30px;background:#fff1d8;gap:30px}
 .logo-container{flex-shrink:0}
 .logo{width:140px;height:140px}
-.logo svg{width:100%;height:100%}
+.logo img{width:100%;height:100%;object-fit:contain}
 
 .search-section{flex:1;display:flex;flex-direction:column;gap:10px;max-width:400px;margin:0 auto}
 .search-section input{padding:12px 15px;border:1px solid #ddd;border-radius:6px;font-size:14px;width:100%}
@@ -37,7 +37,7 @@ nav a{color:white;text-decoration:none;font-weight:bold;display:flex;align-items
 nav a:hover{color:#ffd700}
 
 /* Hero/Banner */
-.hero{margin:20px auto;width:95%;background:linear-gradient(135deg,#8b6f47,#d4a574);border-radius:12px;display:flex;align-items:center;justify-content:space-between;overflow:hidden;padding:30px;min-height:350px}
+.hero{margin:20px auto;width:95%;background:linear-gradient(135deg,#8b6f47,#d4a574);border-radius:12px;display:flex;align-items:center;justify-content:space-between;overflow:hidden;padding:30px;min-height:320px}
 .hero-text h1{font-size:38px;color:#00325f;font-weight:bold;line-height:1.2;margin-bottom:15px}
 .hero-text h1 span{color:#b90012}
 .hero-text p{font-size:16px;color:#333;margin-bottom:20px}
@@ -135,42 +135,7 @@ footer{grid-template-columns:1fr;gap:20px}
 <div class="header">
   <div class="logo-container">
     <div class="logo">
-      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <!-- Círculo exterior -->
-        <circle cx="100" cy="100" r="95" fill="none" stroke="#b90012" stroke-width="3"/>
-        <circle cx="100" cy="100" r="90" fill="none" stroke="#00325f" stroke-width="2"/>
-        
-        <!-- Palmera simplificada a la izquierda -->
-        <line x1="30" y1="80" x2="35" y2="50" stroke="#00325f" stroke-width="2"/>
-        <circle cx="32" cy="45" r="3" fill="#00325f"/>
-        <circle cx="38" cy="48" r="2" fill="#00325f"/>
-        <circle cx="28" cy="48" r="2" fill="#00325f"/>
-        
-        <!-- Casa/tienda -->
-        <rect x="60" y="70" width="30" height="35" fill="#b90012" stroke="#00325f" stroke-width="1"/>
-        <polygon points="60,70 75,50 90,70" fill="#ffd700" stroke="#00325f" stroke-width="1"/>
-        <rect x="65" y="80" width="6" height="8" fill="#ffd700"/>
-        <rect x="79" y="80" width="6" height="8" fill="#ffd700"/>
-        
-        <!-- Rayitas amarillas en techo -->
-        <line x1="65" y1="60" x2="68" y2="65" stroke="#ffd700" stroke-width="1"/>
-        <line x1="72" y1="58" x2="75" y2="63" stroke="#ffd700" stroke-width="1"/>
-        <line x1="79" y1="60" x2="82" y2="65" stroke="#ffd700" stroke-width="1"/>
-        
-        <!-- Auto simplificado a la derecha -->
-        <rect x="110" y="85" width="20" height="12" fill="#00325f" stroke="#00325f" stroke-width="1"/>
-        <rect x="115" y="78" width="10" height="8" fill="#00325f"/>
-        <circle cx="113" cy="100" r="3" fill="#ffd700"/>
-        <circle cx="128" cy="100" r="3" fill="#ffd700"/>
-        
-        <!-- Texto principal: Los Rodríguez -->
-        <text x="100" y="130" font-size="18" font-weight="bold" text-anchor="middle" fill="#b90012" font-family="Arial">Los</text>
-        <text x="100" y="152" font-size="16" font-weight="bold" text-anchor="middle" fill="#b90012" font-family="Arial">Rodríguez</text>
-        
-        <!-- Texto inferior: DE TODO COMO EN CASA -->
-        <text x="100" y="170" font-size="9" text-anchor="middle" fill="#00325f" font-family="Arial" font-weight="bold">DE TODO:</text>
-        <text x="100" y="180" font-size="9" text-anchor="middle" fill="#00325f" font-family="Arial" font-weight="bold">COMO EN CASA</text>
-      </svg>
+      <img src="logo.svg" alt="Los Rodríguez Tienda Logo">
     </div>
   </div>
   
@@ -369,12 +334,7 @@ footer{grid-template-columns:1fr;gap:20px}
 <footer>
   <div>
     <div class="footer-logo">
-      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="100" cy="100" r="95" fill="none" stroke="white" stroke-width="3"/>
-        <circle cx="100" cy="100" r="90" fill="none" stroke="white" stroke-width="2"/>
-        <text x="100" y="130" font-size="16" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">Los</text>
-        <text x="100" y="150" font-size="14" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">Rodríguez</text>
-      </svg>
+      <img src="logo.svg" alt="Los Rodríguez Tienda Logo">
     </div>
     <p>Tienda de confianza desde hace años, siempre cerca de ti con los mejores productos.</p>
   </div>
