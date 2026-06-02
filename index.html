@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Los Rodríguez Tienda</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#fff4df;color:#071f3d}
+.top{background:#b90012;color:white;padding:10px 30px;display:flex;justify-content:space-between;font-weight:bold}
+.header{display:flex;align-items:center;justify-content:space-between;padding:15px 60px;background:#fff1d8}
+.logo{width:260px}
+.slogan{text-align:center;font-family:cursive;font-size:36px;color:#0b3768}
+.slogan span{color:#b90012}
+.cart{border:1px solid #ddd;padding:15px 25px;border-radius:8px;background:white;font-weight:bold}
+.search{text-align:center;background:#fff1d8;padding-bottom:20px}
+.search input{padding:14px;width:360px;border:1px solid #ddd;border-radius:6px}
+.search button{padding:14px 28px;background:#b90012;color:white;border:0;border-radius:6px;font-weight:bold;cursor:pointer}
+nav{background:#00325f;display:flex;justify-content:center;gap:70px;padding:16px}
+nav a{color:white;text-decoration:none;font-weight:bold}
+.hero{margin:18px auto;width:95%;height:430px;background:linear-gradient(90deg,#f7d9a7,#6a3d16);border-radius:15px;display:flex;align-items:center;justify-content:space-around;overflow:hidden}
+.hero h1{font-size:42px;color:#00325f}
+.hero h1 span{color:#b90012}
+.hero img{width:55%;max-height:390px;object-fit:contain}
+.btn{margin-top:25px;background:#00325f;color:white;padding:15px 30px;border-radius:8px;display:inline-block;font-weight:bold;cursor:pointer}
+.title{text-align:center;margin:30px;font-family:cursive;font-size:36px;color:#00325f}
+.title span{color:#b90012}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;width:95%;margin:auto;padding-bottom:30px}
+.card{background:#fffaf0;border:1px solid #ead8bd;border-radius:10px;text-align:center;padding:15px;box-shadow:0 2px 5px #0001;position:relative}
+.card img{height:120px;width:100%;object-fit:contain}
+.card h3{font-size:16px;margin:10px 0;color:#111}
+.price{font-size:22px;color:#c40012;font-weight:bold}
+.old{text-decoration:line-through;color:#777;font-size:14px}
+.offer{position:absolute;top:10px;left:10px;background:#c40012;color:white;padding:6px 10px;border-radius:6px;font-weight:bold;z-index:10}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;width:95%;margin:25px auto;background:#fff1d8;border:1px solid #ead8bd;border-radius:10px;padding:18px;text-align:center;font-weight:bold}
+.features div{display:flex;flex-direction:column;align-items:center;gap:10px}
+.features img{width:40px}
+footer{background:#00325f;color:white;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:20px;padding:30px 60px}
+footer img{width:160px}
+footer p, footer li{margin:8px 0}
+footer a{color:white;text-decoration:none}
+@media(max-width:800px){
+.header{flex-direction:column;padding:15px}.slogan{font-size:28px}.hero{height:auto;flex-direction:column;padding:25px}.hero img{width:100%}
+nav{gap:20px;flex-wrap:wrap}.features,footer{grid-template-columns:1fr}.top{font-size:12px;flex-direction:column;gap:10px}
+}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div>📍 Calle 23 #512 e/ L y M, Vedado, La Habana</div>
+  <div>¡De todo, como en casa!</div>
+  <div>📱 +53 5 0152720</div>
+</div>
+
+<div class="header">
+  <div class="logo">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" r="95" fill="#b90012" stroke="#00325f" stroke-width="2"/>
+      <text x="100" y="120" font-size="24" font-weight="bold" text-anchor="middle" fill="white">Los</text>
+      <text x="100" y="145" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Rodríguez</text>
+    </svg>
+  </div>
+  <div class="slogan">Tu tienda de confianza, <span>siempre cerca de ti</span></div>
+  <div class="cart">🛒 Mi carrito<br>0 productos</div>
+</div>
+
+<div class="search">
+  <input type="text" placeholder="¿Qué estás buscando?">
+  <button>Buscar</button>
+</div>
+
+<nav>
+  <a href="#inicio">🏠 Inicio</a>
+  <a href="#productos">🛍️ Productos</a>
+  <a href="#ofertas">🎁 Ofertas</a>
+  <a href="#nosotros">👥 Nosotros</a>
+  <a href="#contacto">✉️ Contacto</a>
+</nav>
+
+<div class="hero">
+  <div>
+    <h1>SABOR QUE UNE,<br><span>CALIDAD QUE CONFÍAS</span></h1>
+    <p style="margin-top:15px;font-size:16px;color:#333">De todo, como en casa.</p>
+    <button class="btn">Ver productos</button>
+  </div>
+  <div style="text-align:center;flex:1">
+    <p style="font-weight:bold;color:#00325f;margin-bottom:15px">Nuestras marcas</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center">
+      <span style="background:white;padding:8px 12px;border-radius:6px;font-size:14px">Golden</span>
+      <span style="background:white;padding:8px 12px;border-radius:6px;font-size:14px">Lual</span>
+      <span style="background:white;padding:8px 12px;border-radius:6px;font-size:14px">Lualcito</span>
+      <span style="background:white;padding:8px 12px;border-radius:6px;font-size:14px">Sazón</span>
+      <span style="background:white;padding:8px 12px;border-radius:6px;font-size:14px">Goya</span>
+      <span style="background:white;padding:8px 12px;border-radius:6px;font-size:14px">Fresko</span>
+    </div>
+  </div>
+</div>
+
+<h2 class="title">★ Nuestros productos ★</h2>
+
+<div class="grid">
+  <div class="card">
+    <img src="https://via.placeholder.com/120?text=Golden" alt="Refresco Golden">
+    <h3>Refresco Golden</h3>
+    <p class="price">28 CUP</p>
+  </div>
+  
+  <div class="card">
+    <img src="https://via.placeholder.com/120?text=Lual" alt="Refresco Lual">
+    <h3>Refresco Lual</h3>
+    <p class="price">45 CUP</p>
+  </div>
+  
+  <div class="card">
+    <img src="https://via.placeholder.com/120?text=Lualcito" alt="Refresco Lualcito">
+    <h3>Refresco Lualcito</h3>
+    <p class="price">40 CUP</p>
+  </div>
+  
+  <div class="card">
+    <img src="https://via.placeholder.com/120?text=Sazon+Completo" alt="Sazón Completo">
+    <h3>Sazón Completo</h3>
+    <p class="price">55 CUP</p>
+  </div>
+  
+  <div class="card">
+    <img src="https://via.placeholder.com/120?text=Sazon+Goya" alt="Sazón Goya">
+    <h3>Sazón Goya</h3>
+    <p class="price">65 CUP</p>
+  </div>
+  
+  <div class="card">
+    <img src="https://via.placeholder.com/120?text=Sazon+Fresko" alt="Sazón Fresko">
+    <h3>Sazón Fresko</h3>
+    <p class="price">40 CUP</p>
+  </div>
+  
+  <div class="card">
+    <img src="https://via.placeholder.com/120?text=Sazon+Caldo+Carne" alt="Sazón Caldo de Carne">
+    <h3>Sazón Caldo de Carne</h3>
+    <p class="price">40 CUP</p>
+  </div>
+  
+  <div class="card">
+    <img src="https://via.placeholder.com/120?text=Sazon+Tropical" alt="Sazón Tropical">
+    <h3>Sazón Tropical</h3>
+    <p class="price">45 CUP</p>
+  </div>
+  
+  <div class="card">
+    <img src="https://via.placeholder.com/120?text=Sazon+Golden+Ahumada" alt="Sazón Golden Res Ahumada">
+    <h3>Sazón Golden Res Ahumada</h3>
+    <p class="price">45 CUP</p>
+  </div>
+  
+  <div class="card">
+    <img src="https://via.placeholder.com/120?text=Sazon+Tuti+Pollo" alt="Sazón Tutí Pollo Ahumado">
+    <h3>Sazón Tutí Pollo Ahumado</h3>
+    <p class="price">45 CUP</p>
+  </div>
+  
+  <div class="card">
+    <img src="https://via.placeholder.com/120?text=Pastillas+Pollo+Tomate" alt="Pastillas Pollo/Tomate">
+    <h3>Pastillas Pollo/Tomate</h3>
+    <p class="price">20 CUP</p>
+  </div>
+  
+  <div class="card">
+    <img src="https://via.placeholder.com/120?text=Pastillas+Congris" alt="Pastillas de Congris">
+    <h3>Pastillas de Congris</h3>
+    <p class="price">55 CUP</p>
+  </div>
+</div>
+
+<h2 class="title">★ Ofertas especiales ★</h2>
+
+<div class="grid">
+  <div class="card">
+    <div class="offer">-10%</div>
+    <img src="https://via.placeholder.com/120?text=Lual+Oferta" alt="Refresco Lual">
+    <h3>Refresco Lual</h3>
+    <p class="price">45 CUP</p>
+    <p class="old">50 CUP</p>
+  </div>
+  
+  <div class="card">
+    <div class="offer">-10%</div>
+    <img src="https://via.placeholder.com/120?text=Sazon+Completo" alt="Sazón Completo">
+    <h3>Sazón Completo</h3>
+    <p class="price">55 CUP</p>
+    <p class="old">60 CUP</p>
+  </div>
+  
+  <div class="card">
+    <div class="offer">-10%</div>
+    <img src="https://via.placeholder.com/120?text=Sazon+Goya" alt="Sazón Goya">
+    <h3>Sazón Goya</h3>
+    <p class="price">65 CUP</p>
+    <p class="old">72 CUP</p>
+  </div>
+  
+  <div class="card">
+    <div class="offer">-10%</div>
+    <img src="https://via.placeholder.com/120?text=Pastillas+Pollo" alt="Pastillas Pollo/Tomate">
+    <h3>Pastillas Pollo/Tomate</h3>
+    <p class="price">20 CUP</p>
+    <p class="old">22 CUP</p>
+  </div>
+  
+  <div class="card">
+    <div class="offer">-10%</div>
+    <img src="https://via.placeholder.com/120?text=Pastillas+Congris" alt="Pastillas de Congris">
+    <h3>Pastillas de Congris</h3>
+    <p class="price">55 CUP</p>
+    <p class="old">60 CUP</p>
+  </div>
+</div>
+
+<div class="features">
+  <div>
+    <div style="font-size:28px">✅</div>
+    <div>Productos de calidad</div>
+  </div>
+  <div>
+    <div style="font-size:28px">💰</div>
+    <div>Precios justos para ti</div>
+  </div>
+  <div>
+    <div style="font-size:28px">👥</div>
+    <div>Atención cercana y personalizada</div>
+  </div>
+  <div>
+    <div style="font-size:28px">🏠</div>
+    <div>De todo, como en casa</div>
+  </div>
+</div>
+
+<footer>
+  <div>
+    <h3>Los Rodríguez</h3>
+    <p>Tienda de confianza desde hace años, siempre cerca de ti con los mejores productos.</p>
+  </div>
+  <div>
+    <h3>Enlaces rápidos</h3>
+    <ul style="list-style:none">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#ofertas">Ofertas</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+    </ul>
+  </div>
+  <div>
+    <h3>Contáctanos</h3>
+    <ul style="list-style:none">
+      <li>📱 <a href="tel:+5350152720">+53 5 0152720</a></li>
+      <li>📍 Calle 23 #512 e/ L y M</li>
+      <li>📍 Vedado, La Habana</li>
+      <li>⏰ Lunes a Sábado</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Síguenos</h3>
+    <ul style="list-style:none">
+      <li><a href="#">👍 Los Rodríguez Tienda</a></li>
+      <li><a href="#">📸 @losrodrigueztienda</a></li>
+      <li style="margin-top:20px;font-size:12px">© 2024 Los Rodríguez Tienda<br>Todos los derechos reservados</li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
